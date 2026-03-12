@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Maestro - ARS ASEMAP</title>
+    <link rel="stylesheet" href="formulario.registro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="form-wrapper">
+        <form class="glass-form">
+            <header class="main-header">
+                <div class="logo-box">
+                    <img src="imagenes/asemaplogo.png" alt="ARS ASEMAP">
+                </div>
+                <h2>Formulario de Afiliación</h2>
+                <p>Por favor, complete la información detallada para su alta en el sistema.</p>
+            </header>
+
+            <fieldset class="form-section">
+                <legend>1. Identidad y Datos Básicos</legend>
+                <div class="grid-3">
+                    <div class="field">
+                        <label>Primer Nombre</label>
+                        <input type="text" placeholder="Ej. Juan" required>
+                    </div>
+                    <div class="field">
+                        <label>Segundo Nombre</label>
+                        <input type="text" placeholder="Ej. Alberto">
+                    </div>
+                    <div class="field">
+                        <label>Apellidos</label>
+                        <input type="text" placeholder="Ej. Pérez García" required>
+                    </div>
+                </div>
+                <div class="grid-3">
+                    <div class="field">
+                        <label>Tipo de Documento</label>
+                        <select>
+                            <option>Cédula de Identidad</option>
+                            <option>Pasaporte</option>
+                            <option>RNC</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>Número de Documento</label>
+                        <input type="text" placeholder="000-0000000-0">
+                    </div>
+                    <div class="field">
+                        <label>Nacionalidad</label>
+                        <input type="text" placeholder="Dominicano/a">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section secondary">
+                <legend>2. Perfil Médico Inicial</legend>
+                <div class="grid-3">
+                    <div class="field">
+                        <label>Tipo de Sangre</label>
+                        <select>
+                            <option>O+</option>
+                            <option>O-</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>AB+</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label>Estatura (cm)</label>
+                        <input type="number" placeholder="175">
+                    </div>
+                    <div class="field">
+                        <label>Peso (kg)</label>
+                        <input type="number" placeholder="70">
+                    </div>
+                </div>
+                <div class="field full-width">
+                    <label>Alergias Conocidas</label>
+                    <textarea placeholder="Liste medicamentos, alimentos o sustancias..."></textarea>
+                </div>
+                <div class="field full-width">
+                    <label>Condiciones Pre-existentes / Enfermedades Crónicas</label>
+                    <textarea placeholder="Ej. Hipertensión, Diabetes, Asma..."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>3. Residencia y Localización</legend>
+                <div class="grid-2">
+                    <div class="field">
+                        <label>Dirección Línea 1</label>
+                        <input type="text" placeholder="Calle y número de casa">
+                    </div>
+                    <div class="field">
+                        <label>Dirección Línea 2 (Opcional)</label>
+                        <input type="text" placeholder="Apto, Edificio, Referencia">
+                    </div>
+                </div>
+                <div class="grid-3">
+                    <div class="field">
+                        <label>Sector / Barrio</label>
+                        <input type="text" placeholder="Ej. Piantini">
+                    </div>
+                    <div class="field">
+                        <label>Ciudad</label>
+                        <input type="text" placeholder="Ej. Santo Domingo">
+                    </div>
+                    <div class="field">
+                        <label>Provincia</label>
+                        <input type="text" placeholder="Seleccione Provincia">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section alert">
+                <legend>4. Contacto en Caso de Emergencia</legend>
+                <div class="grid-2">
+                    <div class="field">
+                        <label>Nombre Completo del Contacto</label>
+                        <input type="text" placeholder="Persona de confianza">
+                    </div>
+                    <div class="field">
+                        <label>Parentesco</label>
+                        <select>
+                            <option>Cónyuge</option>
+                            <option>Padre/Madre</option>
+                            <option>Hijo/a</option>
+                            <option>Hermano/a</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid-2">
+                    <div class="field">
+                        <label>Teléfono Principal</label>
+                        <input type="tel" placeholder="809-000-0000">
+                    </div>
+                    <div class="field">
+                        <label>Teléfono Secundario</label>
+                        <input type="tel" placeholder="829-000-0000">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>5. Documentación Adjunta</legend>
+                <div class="grid-2">
+                    <div class="field">
+                        <label>Foto de la Cédula (Frontal)</label>
+                        <input type="file" class="file-input">
+                    </div>
+                    <div class="field">
+                        <label>Foto de la Cédula (Reverso)</label>
+                        <input type="file" class="file-input">
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="terms-area">
+                <label class="custom-check">
+                    <input type="checkbox">
+                    <span class="box"></span>
+                    Certifico que toda la información provista es verídica y autorizo a ARS ASEMAP al tratamiento de mis datos médicos.
+                </label>
+            </div>
+
+            <div class="actions">
+                <button type="button" class="btn btn-outline">Guardar Borrador</button>
+                <button type="submit" class="btn btn-main">Finalizar Registro</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
